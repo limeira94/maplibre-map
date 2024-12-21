@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>MapLibre + Tailwind Toggle</title>
+</head>
+
+<body class="h-screen w-screen overflow-hidden">
+  <div id="app" class="h-full w-full flex">
+    <!-- Sidebar -->
+    <div id="sidebar" class="z-50 w-64 bg-white border-r border-gray-200 p-4 
+    transform transition-transform duration-300">
+      <!-- Arrow Icon (inline SVG) -->
+
+
+      <!-- Sidebar Content (e.g., Layers, etc.) -->
+      <h1 class="text-xl font-bold mb-4">Layers</h1>
+      <div id="layers-container"></div>
+    </div>
+
+    <!-- Map container -->
+    <div id="map" class="flex-1 h-full"></div>
+  </div>
+
+  <!-- Import your Vite/TS entry point -->
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
